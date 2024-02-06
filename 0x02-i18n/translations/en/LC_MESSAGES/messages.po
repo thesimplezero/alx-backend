@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-06 18:25+0300\n"
-"PO-Revision-Date: 2024-02-06 18:26+0300\n"
+"POT-Creation-Date: 2024-02-06 21:32+0300\n"
+"PO-Revision-Date: 2024-02-06 21:32+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,29 +20,37 @@ msgstr ""
 
 #: 3-app.py:29
 msgid "Welcome to Holberton"
-msgstr ""
+msgstr "Welcome to Holberton"
 
 #: 3-app.py:30
 msgid "Hello world!"
-msgstr ""
+msgstr "Hello world!"
 
 #: templates/3-index.html:5 templates/4-index.html:5 templates/5-index.html:5
 #: templates/6-index.html:5 templates/7-index.html:5
 msgid "home_title"
+msgstr "Welcome to Holberton"
+
+#: templates/3-index.html:8 templates/4-index.html:8 templates/6-index.html:8
+#: templates/7-index.html:8
+msgid "home_header"
+msgstr "Hello world!"
+
+#: templates/5-index.html:8
+msgid "Bonjour monde!"
 msgstr ""
 
-#: templates/3-index.html:8 templates/4-index.html:8 templates/5-index.html:8
-#: templates/6-index.html:8 templates/7-index.html:8
-msgid "Hello world!"
+#: templates/5-index.html:11
+#, python-format
+msgid "logged_in_as%(username)s"
 msgstr ""
 
-#: templates/5-index.html:10 templates/6-index.html:10
-#: templates/7-index.html:10
-msgid "logged_in_as"
-msgstr ""
-
-#: templates/5-index.html:12 templates/6-index.html:12
+#: templates/5-index.html:13 templates/6-index.html:12
 #: templates/7-index.html:12
 msgid "not_logged_in"
+msgstr ""
+
+#: templates/6-index.html:10 templates/7-index.html:10
+msgid "logged_in_as"
 msgstr ""
 
