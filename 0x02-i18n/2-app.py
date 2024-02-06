@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-
+# Import necessary modules
 from flask import Flask, \
-    render_template
-from flask_babel import Babel
-
-# Create Flask app
+    render_template, request
+from flask_babel import Babel, \
+    _
 app = Flask(__name__)
-# Instantiate Babel object
 babel = Babel(app)
 
 
@@ -19,15 +17,18 @@ class Config:
     # Set default timezone
     BABEL_DEFAULT_TIMEZONE = "UTC"
 
-
 # Set Flask app config
 app.config.from_object(Config)
+
+# Get locale from request
+@babel.localeselector
+def get_locale():
+    return request.accept_languages.best_match(Config.LANGUAGES)
 
 # Define route for index page
 @app.route('/')
 def index():
-    return render_template('1-index.html')
-
+    return render_template('2-index.html')
 
 # Run app if executed directly
 if __name__ == '__main__':
