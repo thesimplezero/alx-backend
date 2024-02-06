@@ -17,6 +17,7 @@ class Config:
     # Set default timezone
     BABEL_DEFAULT_TIMEZONE = "UTC"
 
+
 # Set Flask app config
 app.config.from_object(Config)
 
@@ -29,6 +30,7 @@ def get_locale():
 @app.route('/')
 def index():
     return render_template('2-index.html')
+
 
 # Run app if executed directly
 if __name__ == '__main__':
